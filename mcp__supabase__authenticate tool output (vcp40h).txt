@@ -1,0 +1,7 @@
+Ask the user to open this URL in their browser to authorize the supabase MCP server:
+
+https://api.supabase.com/v1/oauth/authorize?response_type=code&client_id=01ffc204-9e77-4efe-ac7a-bb92a5dd0977&code_challenge=Zj5nuj770KH4qc5ptEJq2YRpKO5kVonSJDGU-lbZev8&code_challenge_method=S256&redirect_uri=http%3A%2F%2Flocalhost%3A45883%2Fcallback&state=yPA65p7dA56Z5pLfdBinSkfx0-Q_-cnA3QhXnBnGI8c&scope=organizations%3Aread+projects%3Aread+projects%3Awrite+database%3Awrite+database%3Aread+analytics%3Aread+secrets%3Aread+edge_functions%3Aread+edge_functions%3Awrite+environment%3Aread+environment%3Awrite+storage%3Aread&resource=https%3A%2F%2Fmcp.supabase.com%2Fmcp
+
+Once they complete the flow, the server's tools will become available automatically.
+
+If the browser shows a connection error on the redirect page, ask the user to paste the full URL from the address bar and call `mcp__supabase__complete_authentication` with it.
